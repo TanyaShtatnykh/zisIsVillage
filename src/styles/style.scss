@@ -1,0 +1,53 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url(../fonts/NeueMontreal-Medium.ttf) format('ttf'), url(../fonts/NeueMontreal-Medium.woff) format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url(../fonts/NeueMontreal-Bold.ttf) format('ttf'), url(../fonts/NeueMontreal-Bold.woff) format('woff');
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, ul, ol {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input {
+  font-family: "Jost", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Neue Montreal', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+@import './src/blocks/header/header';
+@import './src/blocks/footer/footer';
+@import './src/blocks/welcome/welcome';

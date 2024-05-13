@@ -1,0 +1,48 @@
+mixin header(modifier)
+  header.header&attributes(attributes)
+    .header__row
+      ul.header__socials
+        li.header__social
+          a.header__social-link(href="#")
+            include ./img/header-vk.svg
+        li.header__social
+          a.header__social-link(href="#")
+            include ./img/header-ig.svg
+        li.header__social
+          a.header__social-link(href="#")
+            include ./img/header-youtube.svg
+      a.header__logo-link(href="./")
+        img.header__logo(src="img/header-logo.png", alt="")
+      ul.header__socials
+        li.header__social
+          a.header__social-link(href="tel:#")
+            include ./img/header-phone.svg
+        li.header__social
+          a.header__social-link(href="#")
+            include ./img/header-tg.svg
+        li.header__social
+          a.header__social-link(href="#")
+            include ./img/header-wa.svg
+    nav.header__row
+      ul.header__menu-list
+        li.header__menu-item 
+          a.header__menu-link(href="#") Главная
+        li.header__menu-item 
+          a.header__menu-link(href="#") О нас
+        li.header__menu-item.header__menu-item--drop 
+          a.header__menu-link(href="#").header__menu-link--drop
+            | Наши дома
+            include ./img/header-arrow.svg
+          ul.header__sub-menu-list
+            li.header__sub-menu-item
+              a.header__menu-link(href="#") Забронировать
+            li.header__sub-menu-item
+              a.header__menu-link(href="#") Каталог домов
+            li.header__sub-menu-item
+              a.header__menu-link(href="#") Правила проживания
+        li.header__menu-item 
+          a.header__menu-link(href="#") Как добраться 
+        li.header__menu-item 
+          a.header__menu-link(href="#") Вопросы
+        li.header__menu-item 
+          a.header__menu-link(href="#") Контакты
