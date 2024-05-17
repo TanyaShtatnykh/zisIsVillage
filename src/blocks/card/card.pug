@@ -1,0 +1,8 @@
+mixin card(photo, icon, text)
+  .card&attributes(attributes)
+    img.card__photo(src=`img/${photo}`, alt="")
+    .card__content
+      if icon 
+        img.card__icon(src=`img/${icon}`, alt="")
+      if text
+        p.card__text=text

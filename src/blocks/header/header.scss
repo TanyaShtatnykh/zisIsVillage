@@ -1,29 +1,17 @@
 .header {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  left: 0;
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 20px 80px 0;
-  &__row {
+  background: rgba(23, 41, 37, 0.8);
+  z-index: 3;
+
+  &__area {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 28px;
-  }
-  &__socials {
-    display: flex;
-    column-gap: 44px;
-  }
-  &__social, &__social-link {
-    display: flex;
-    max-width: 42px;
-    height: auto;
-  }
-  &__social-link:hover {
-    path {
-      fill: #172925;
-    }
+    padding: 0 80px;
   }
   &__logo-link {
     display: flex;
@@ -34,24 +22,26 @@
   }
   &__menu-list {
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    column-gap: 40px;
   }
   &__menu-link {
     display: flex;
     align-items: center;
-    font-size: px-to-em(28);
-    line-height: lh-to-pct(40, 28);
+    font-size: px-to-em(20);
+    line-height: lh-to-pct(27, 20);
     font-weight: 400;
-    color: #010203;
+    color: #fff;
     text-decoration: none;
-    opacity: 0.65;
     svg {
       margin-left: 10px;
+      path {
+        fill: #fff;
+      }
+      
     }
     &:hover {
       color: #A04337;
-      opacity: 1;
       path {
         fill: #A04337;
       }
@@ -59,25 +49,27 @@
   }
   &__sub-menu-list {
     position: absolute;
-    top: 40px;
-    left: -11%;
+    top: 30px;
+    left: -15%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     min-width: 320px;
-    visibility: hidden;
     max-height: 0;
+    visibility: hidden;
     overflow: hidden;
     opacity: 0;
-    background: linear-gradient(to bottom, transparent, #fff 20%);
+    background-color: rgba(23, 41, 37, 0.8);
     z-index: 3;
     padding: 10px 20px;
     border-radius: 30px;
-    // box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
   }
   &__menu-item {
     position: relative;
     &--open {
       .header__menu-link--drop {
         color: #A04337;
-        opacity: 1;
         svg {
           transform: rotate(180deg);
           path {

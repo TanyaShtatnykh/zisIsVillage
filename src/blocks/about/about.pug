@@ -1,0 +1,10 @@
+mixin about(modifier)
+  section.about&attributes(attributes)#about
+    .about__area
+      h2.about__title Zis is village - это
+      p.about__text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+      .about__slider.owl-carousel
+        +card("about-photo1.png", "about-icon1.png", "Удобные гамаки")
+        +card("about-photo2.png", "about-icon2.png", "Костровая зона")
+        +card("about-photo3.png", "about-icon3.png", "Мангальная зона")
+        +card("about-photo4.png", "about-icon4.png", "Детская площадка (На\u00A0этапе строительствa)")

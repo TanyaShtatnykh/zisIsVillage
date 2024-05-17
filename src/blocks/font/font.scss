@@ -1,0 +1,34 @@
+.font {
+  &__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 30px 100px;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    font-size: px-to-em(44);
+    line-height: lh-to-pct(53, 44);
+    font-weight: 500;
+    text-align: center;
+    color: #172925;
+  }
+  &__icon {
+    max-width: 100px;
+    height: auto;
+    margin-right: 26px;
+  }
+  &__text {
+    max-width: 880px;
+    margin-bottom: 20px;
+    font-size: px-to-em(20);
+    line-height: lh-to-pct(28, 20);
+    font-weight: 400;
+    text-align: center;
+  }
+}

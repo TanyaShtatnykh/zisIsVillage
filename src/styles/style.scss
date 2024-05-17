@@ -15,7 +15,19 @@
 html {
   scroll-behavior: smooth;
 }
-
+body {
+  position: relative;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #172925;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #A04337;
+  border-radius: 20px;
+}
 body, ul, ol {
   margin: 0;
   padding: 0;
@@ -48,6 +60,14 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
+p {
+  color: #010203;
+}
+
 @import './src/blocks/header/header';
 @import './src/blocks/footer/footer';
 @import './src/blocks/welcome/welcome';
+@import './src/blocks/about/about';
+@import './src/blocks/card/card';
+@import './src/blocks/font/font';
+@import './src/blocks/space/space';
