@@ -30,4 +30,48 @@
     line-height: lh-to-pct(26, 18);
     font-weight: 600;
   }
+  @media screen and (max-width: 1399.98px) {
+    &__icon {
+      max-width: 38px;
+      margin-right: 14px;
+    }
+    &__text {
+      max-width: 190px;
+      font-size: px-to-em(16);
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    &__icon {
+      max-width: 30px;
+      margin-right: 10px;
+    }
+    &__text {
+      max-width: 180px;
+      font-size: px-to-em(14);
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    padding: 12px;
+    &__photo {
+      height: 230px;
+      margin-bottom: 12px;
+    }
+    &__content {
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    box-shadow: none;
+    padding: 12px 12px 12px 14px;
+  }
+  @media screen and (max-width: 359.98px) {
+    &__icon {
+      max-width: 24px;
+      margin-right: 10px;
+    }
+    &__text {
+      max-width: 150px;
+      font-size: px-to-em(12);
+    }
+  }
 }

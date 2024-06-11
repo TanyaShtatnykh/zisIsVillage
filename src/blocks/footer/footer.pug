@@ -1,2 +1,27 @@
 mixin footer(modifier)
-  .footer&attributes(attributes)
+  footer.footer&attributes(attributes)
+    .footer__area
+      a.footer__logo-link(href="./"): img.footer__logo(src="img/footer-logo.png", alt="Logo")
+      .footer__info
+        .footer__block.footer__block--top
+          ul.footer__menu-list
+            li.footer__menu-item
+              a.footer__menu-link(href="#") Главная
+            li.footer__menu-item
+              a.footer__menu-link(href="#") Забронировать 
+            li.footer__menu-item
+              a.footer__menu-link(href="#") Наше пространство 
+            li.footer__menu-item
+              a.footer__menu-link(href="#") Правила проживания
+          .footer__socials
+            p.footer__text Подписывайтесь
+            a.footer__social-link(href="#")
+              include ./img/footer-vk.svg
+            a.footer__social-link(href="#")
+              include ./img/footer-ig.svg
+            a.footer__social-link(href="#")
+              include ./img/footer-yt.svg
+        .footer__block.footer__block--bottom
+          a.footer__doc-link(href="#") Пользовательское соглашение
+          a.footer__doc-link(href="#") Политика конфиденциальности 
+          a.footer__doc-link(href="#") Политика файлов Cookie

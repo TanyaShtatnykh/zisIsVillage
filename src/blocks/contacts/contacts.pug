@@ -1,0 +1,29 @@
+mixin contacts(modifier)
+  section.contacts&attributes(attributes)
+    h2.contacts__title
+      img.contacts__icon(src="img/contact-icon.png", alt="")
+      | Контакты
+    .contacts__area
+      .contacts__map
+        | <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d513256.8346058651!2d29.49993483353758!3d59.83403443341044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1717994000119!5m2!1sru!2sru" width="100%" height="600px" style="border:0;border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      ul.contacts__info
+        li.contacts__item 
+          a.contacts__link(href="#")
+            include ./img/contact-icon-loc.svg
+            | Адрес
+        li.contacts__item
+          a.contacts__link(href="tel:")
+            include ./img/contact-icon-phone.svg
+            | 8-999-999-99-99
+        li.contacts__item
+          a.contacts__link(href="mailto:zisisvillage@gmail.com")
+            include ./img/contact-icon-mail.svg
+            | zisisvillage@gmail.com
+        li.contacts__item
+          a.contacts__link(href="#")
+            include ./img/contact-icon-wa.svg
+            | Наш WhatsApp
+        li.contacts__item
+          a.contacts__link(href="#")
+            include ./img/contact-icon-tg.svg
+            | Наш телеграм
