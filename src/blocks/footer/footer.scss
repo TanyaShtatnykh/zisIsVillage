@@ -5,6 +5,9 @@
   &__area {
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 44px 80px;
     column-gap: 36px;
   }
