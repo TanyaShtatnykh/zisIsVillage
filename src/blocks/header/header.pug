@@ -1,5 +1,5 @@
-mixin header(modifier)
-  header.header&attributes(attributes)
+mixin header(page)
+  header.header&attributes(attributes)(class=page ? `header--page` : "")
     .header__area
       a.header__logo-link(href="./"): img.header__logo(src="img/header-logo.png", alt="Logo")
       .header__burger-btn
@@ -12,21 +12,21 @@ mixin header(modifier)
           .header__line
       nav.header__menu
         ul.header__menu-list
-          li.header__menu-item: a.header__menu-link(href="#") Главная
-          li.header__menu-item: a.header__menu-link(href="#about") О нас
+          li.header__menu-item: a.header__menu-link(href="./") Главная
+          li.header__menu-item: a.header__menu-link(href="index.html#about") О нас
           li.header__menu-item.header__menu-item--drop 
             button.header__menu-link(type="button").header__menu-link--drop
               | Наше пространство
               include ./img/header-arrow.svg
             ul.header__sub-menu-list
               li.header__sub-menu-item
-                a.header__menu-link(href="#") Забронировать
+                a.header__menu-link(href="reserve.html") Забронировать
               li.header__sub-menu-item
-                a.header__menu-link(href="#") Каталог домов
+                a.header__menu-link(href="index.html#space") Каталог домов
               li.header__sub-menu-item
-                a.header__menu-link(href="#") Акции
+                a.header__menu-link(href="promo.html") Акции
               li.header__sub-menu-item
-                a.header__menu-link(href="#") Правила проживания
-          li.header__menu-item: a.header__menu-link(href="#") Как добраться 
-          li.header__menu-item: a.header__menu-link(href="#") Вопросы
-          li.header__menu-item: a.header__menu-link(href="#") Контакты
+                a.header__menu-link(href="doc.html") Правила проживания
+          li.header__menu-item: a.header__menu-link(href="index.html#way") Как добраться 
+          li.header__menu-item: a.header__menu-link(href="index.html#questions") Вопросы
+          li.header__menu-item: a.header__menu-link(href="index.html#contact") Контакты

@@ -6,6 +6,14 @@
   width: 100%;
   background: rgba(23, 41, 37, 0.8);
   z-index: 3;
+  &--page {
+    position: relative;
+    top: 0;
+    background: rgba(23, 41, 37, 1);
+    .header__sub-menu-list {
+      background-color: rgba(23, 41, 37, 0.98);
+    }
+  }
   &__area {
     display: flex;
     justify-content: space-between;
@@ -123,6 +131,12 @@
   }
   @media screen and (max-width: 767.98px) {
     top: 20px;
+    &--page {
+      top: 0px;
+      .header__sub-menu-list {
+        background-color: transparent;
+      }
+    }
     &__area {
       flex-wrap: wrap;
       padding: 0 12px;

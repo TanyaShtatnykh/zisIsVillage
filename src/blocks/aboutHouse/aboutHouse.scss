@@ -1,0 +1,225 @@
+.aboutHouse {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 80px;
+  column-gap: 50px;
+  &__slider {
+    position: relative;
+    max-width: 62%;
+  }
+  .slick-list {
+    padding: 6px 2px;
+  }
+  .slick-slide div {
+    display: flex;
+  }
+  &__image {
+    border-radius: 60px;
+    object-fit: cover;
+    &--mini {
+      padding: 0 6px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+  }
+  &__nav {
+    display: flex;
+    bottom: 6px;
+    padding: 10px 20px !important;
+    position: absolute;
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    &--prev {
+      left: -60px;
+      transform: rotate(180deg);
+    }
+    &--next {
+      right: -60px;
+    }
+    path {
+      fill: #172925;
+    }
+    &:hover {
+      path {
+        fill: #A04337;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__name {
+    margin-bottom: 22px;
+    font-size: px-to-em(44);
+    line-height: lh-to-pct(53, 44);
+    font-weight: 500;
+    color: #010203;
+  }
+  &__text {
+    margin-bottom: 32px;
+    font-size: px-to-em(24);
+    line-height: lh-to-pct(31, 24);
+    font-weight: 400;
+    color: #172925;
+    &--price {
+      font-weight: 500;
+    }
+  }
+  &__reserve {
+    padding: 20px 50px;
+    border-radius: 40px;
+    background-color: #A04337;
+    font-size: px-to-em(20);
+    line-height: lh-to-pct(28, 20);
+    font-weight: 500;
+    color: #fff;
+    &:hover {
+      background-color: #172925;
+    }
+  }
+  @media screen and (max-width: 1399.98px) {
+    &__nav {
+      bottom: 0;
+    }
+  }
+  @media screen and (max-width: 1199.98px) {
+    padding: 100px 50px;
+    &__nav {
+      padding: 10px !important;
+      &--prev {
+        left: -40px;
+      }
+      &--next {
+        right: -40px;
+      }
+      svg {
+        width: 20px;
+        height: 36px;
+      }
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    padding: 70px 30px;
+    &__nav {
+      &--prev {
+        left: -34px;
+      }
+      &--next {
+        right: -34px;
+      }
+      svg {
+        width: 14px;
+        height: 26px;
+      }
+    }
+    &__name {
+      margin-bottom: 18px;
+      font-size: px-to-em(36);
+    }
+    &__text {
+      margin-bottom: 28px;
+      font-size: px-to-em(20);
+    }
+    &__reserve {
+      padding: 16px 50px;
+      font-size: px-to-em(18);
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    flex-direction: column-reverse;
+    row-gap: 20px;
+    padding: 60px 12px;
+    &__slider {
+      max-width: 100%;
+    }
+    &__image {
+      max-height: 300px;
+      border-radius: 20px;
+      &--mini {
+        padding: 0 4px;
+        border-radius: 14px;
+        height: 70px;
+      }
+    }
+    &__nav {
+      background-color: #172925;
+      border-radius: 50%;
+      bottom: 24px;
+      &--prev {
+        left: 0px;
+      }
+      &--next {
+        right: 0px;
+      }
+      svg {
+        width: 10px;
+        height: 10px;
+      }
+      path {
+        fill: #fff;
+      }
+      &:hover {
+        background-color: #A04337;
+        path {
+          fill: #fff;
+        }
+      }
+    }
+    &__info {
+      align-items: center;
+    }
+    &__name {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    &__text {
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    &__reserve {
+      padding: 14px 50px;
+      font-size: px-to-em(16);
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    row-gap: 10px;
+    &__name {
+      font-size: px-to-em(24);
+    }
+    &__text {
+      font-size: px-to-em(16);
+    }
+    &__reserve {
+      font-size: px-to-em(14);
+    }
+  }
+  @media screen and (max-width: 359.98px) {
+    .slick-list {
+      padding: 2px;
+    }
+    &__image {
+      max-height: 200px;
+    }
+    &__nav {
+      bottom: 22px;
+    }
+    &__name {
+      font-size: px-to-em(20);
+    }
+    &__text {
+      font-size: px-to-em(12);
+    }
+    &__reserve {
+      padding: 10px 40px;
+      font-size: px-to-em(12);
+    }
+  }
+}

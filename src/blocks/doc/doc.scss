@@ -1,0 +1,51 @@
+.doc {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 80px 100px;
+  &__title {
+    align-self: center;
+    margin-bottom: 20px;
+    font-size: calc(1.5em + 1.5vw);
+    text-align: center;
+    color: #A04337;
+  }
+  &__subtitle {
+    margin: 20px 0;
+    font-size: calc(1em + 0.5vw);
+  }
+  &__text {
+    margin: 0 0 8px;
+    font-size: 1em;
+    line-height: 1.7;
+    color: #172925;
+  }
+  @media screen and (max-width: 1199.98px) {
+    padding: 80px 50px 100px;
+  }
+  @media screen and (max-width: 991.98px) {
+    padding: 70px 30px;
+  }
+  @media screen and (max-width: 767.98px) {
+    padding: 60px 12px;
+  }
+  @media screen and (max-width: 575.98px) {
+    padding: 40px 12px 60px;
+    &__title {
+      margin-bottom: 10px;
+      font-size: calc(1.5em + 1.2vw);
+    }
+    &__subtitle {
+      margin: 14px 0;
+      font-size: calc(1em + 0.3vw);
+    }
+    &__text {
+      margin: 0 0 6px;
+      font-size: px-to-em(14);
+      line-height: 1.7;
+    }
+  }
+}

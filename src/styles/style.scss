@@ -45,6 +45,7 @@ button, input {
 * {
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a {
@@ -63,6 +64,27 @@ h1, h2, h3, h4, h5, h6, p {
 p {
   color: #010203;
 }
+.back-to-top {
+  display: none;
+	width: 40px;
+  height: 40px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 20;
+	right: 20px;
+	bottom: -100%;
+	background: #A04337 url("../img/totop.svg") no-repeat center;
+	border-radius: 50%;
+  transition: all 1s ease-in-out;
+  &--visible {
+    bottom: 20px;
+  }
+  @media screen and (max-width: 575.98px) {
+    width: 30px;
+    height: 30px;
+    background-size: 20px 20px;
+  }
+}
 
 @import './src/blocks/header/header';
 @import './src/blocks/footer/footer';
@@ -74,3 +96,9 @@ p {
 @import './src/blocks/transport/transport';
 @import './src/blocks/questions/questions';
 @import './src/blocks/contacts/contacts';
+@import './src/blocks/promo/promo';
+@import './src/blocks/aboutHouse/aboutHouse';
+@import './src/blocks/infoHouse/infoHouse';
+@import './src/blocks/otherHouse/otherHouse';
+@import './src/blocks/doc/doc';
+@import './src/blocks/reserve/reserve';

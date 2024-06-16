@@ -1,0 +1,26 @@
+mixin aboutHouse(modifier)
+  section.aboutHouse&attributes(attributes)
+    .aboutHouse__slider
+      .aboutHouse__gallery
+        img.aboutHouse__image(src="img/house1.png", alt="")
+        img.aboutHouse__image(src="img/house1.png", alt="")
+        img.aboutHouse__image(src="img/house1.png", alt="")
+        img.aboutHouse__image(src="img/house1.png", alt="")
+        img.aboutHouse__image(src="img/house1.png", alt="")
+        img.aboutHouse__image(src="img/house1.png", alt="")
+      .aboutHouse__gallery--mini
+        img.aboutHouse__image--mini(src="img/house1.png", alt="")
+        img.aboutHouse__image--mini(src="img/house1.png", alt="")
+        img.aboutHouse__image--mini(src="img/house1.png", alt="")
+        img.aboutHouse__image--mini(src="img/house1.png", alt="")
+        img.aboutHouse__image--mini(src="img/house1.png", alt="")
+        img.aboutHouse__image--mini(src="img/house1.png", alt="")
+      button.aboutHouse__nav.aboutHouse__nav--prev(type="button")
+        include ./img/nav-arrow.svg
+      button.aboutHouse__nav.aboutHouse__nav--next(type="button")
+        include ./img/nav-arrow.svg
+    .aboutHouse__info
+      h1.aboutHouse__name Forest
+      p.aboutHouse__text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного.
+      p.aboutHouse__text.aboutHouse__text--price от 8500 руб/сутки
+      a.aboutHouse__reserve(href="#") Забронировать

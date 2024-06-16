@@ -9,9 +9,12 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   </head>
   <body>
       <header class="header">
@@ -29,8 +32,8 @@
           </div>
           <nav class="header__menu">
             <ul class="header__menu-list">
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#about">О нас</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="./">Главная</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="index.html#about">О нас</a></li>
               <li class="header__menu-item header__menu-item--drop"> 
                 <button class="header__menu-link header__menu-link--drop" type="button">
                   Наше пространство<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,15 +42,15 @@
 
                 </button>
                 <ul class="header__sub-menu-list">
-                  <li class="header__sub-menu-item"><a class="header__menu-link" href="#">Забронировать</a></li>
-                  <li class="header__sub-menu-item"><a class="header__menu-link" href="#">Каталог домов</a></li>
-                  <li class="header__sub-menu-item"><a class="header__menu-link" href="#">Акции</a></li>
-                  <li class="header__sub-menu-item"><a class="header__menu-link" href="#">Правила проживания</a></li>
+                  <li class="header__sub-menu-item"><a class="header__menu-link" href="reserve.html">Забронировать</a></li>
+                  <li class="header__sub-menu-item"><a class="header__menu-link" href="index.html#space">Каталог домов</a></li>
+                  <li class="header__sub-menu-item"><a class="header__menu-link" href="promo.html">Акции</a></li>
+                  <li class="header__sub-menu-item"><a class="header__menu-link" href="doc.html">Правила проживания</a></li>
                 </ul>
               </li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Как добраться </a></li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Вопросы</a></li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="index.html#way">Как добраться </a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="index.html#questions">Вопросы</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="index.html#contact">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -56,7 +59,7 @@
         <section class="welcome">
           <div class="welcome__area">
             <h1 class="welcome__title">Забронируй свой лучший отдых сейчас</h1>
-            <p class="welcome__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</p><a class="welcome__link" href="#">Забронировать</a>
+            <p class="welcome__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</p><a class="welcome__link" href="reserve.html">Забронировать</a>
           </div>
           <ul class="welcome__socials">
             <li class="welcome__socials-item"><a class="welcome__socials-link" href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +126,7 @@
             </div>
           </div>
         </section>
-        <section class="space">
+        <section class="space" id="space">
           <div class="space__area">
             <h2 class="space__title"><img class="space__icon" src="img/house-icon.png" alt="">Наше простраство</h2>
             <p class="space__text">Сайт рыба текст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
@@ -132,7 +135,7 @@
                 <div class="space__content">
                   <h3 class="space__house-title">Название коттеджа</h3>
                   <p class="space__house-text">Сайт рыба текст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
-                  <p class="space__house-price">Цена от 8500 руб/сутки</p><a class="space__btn-reserve" href="#">Забронировать</a><a class="space__btn-more" href="#">Подробнее</a>
+                  <p class="space__house-price">Цена от 8500 руб/сутки</p><a class="space__btn-reserve" href="reserve.html">Забронировать</a><a class="space__btn-more" href="house.html">Подробнее</a>
                 </div>
                 <div class="space__photos">
                   <div class="space__photo-box space__photo-box--1"><img class="space__photo" src="img/house1.png" alt=""></div>
@@ -144,7 +147,7 @@
                 <div class="space__content">
                   <h3 class="space__house-title">Forest</h3>
                   <p class="space__house-text">Сайт рыба текст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
-                  <p class="space__house-price">Цена от 8500 руб/сутки</p><a class="space__btn-reserve" href="#">Забронировать</a><a class="space__btn-more" href="#">Подробнее</a>
+                  <p class="space__house-price">Цена от 8500 руб/сутки</p><a class="space__btn-reserve" href="reserve.html">Забронировать</a><a class="space__btn-more" href="house.html">Подробнее</a>
                 </div>
                 <div class="space__photos">
                   <div class="space__photo-box space__photo-box--1"><img class="space__photo" src="img/house1.png" alt=""></div>
@@ -156,7 +159,7 @@
                 <div class="space__content">
                   <h3 class="space__house-title">Название коттеджа</h3>
                   <p class="space__house-text">Сайт рыба текст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
-                  <p class="space__house-price">Цена от 8500 руб/сутки</p><a class="space__btn-reserve" href="#">Забронировать</a><a class="space__btn-more" href="#">Подробнее</a>
+                  <p class="space__house-price">Цена от 8500 руб/сутки</p><a class="space__btn-reserve" href="reserve.html">Забронировать</a><a class="space__btn-more" href="house.html">Подробнее</a>
                 </div>
                 <div class="space__photos">
                   <div class="space__photo-box space__photo-box--1"><img class="space__photo" src="img/house1.png" alt=""></div>
@@ -167,7 +170,7 @@
             </div>
           </div>
         </section>
-        <div class="font">
+        <section class="font">
           <div class="font__area">
             <h2 class="font__title"> <img class="font__icon" src="img/font-icon.png" alt="">Купель</h2>
             <p class="font__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
@@ -198,8 +201,8 @@
                 </div>
             </div>
           </div>
-        </div>
-        <section class="transport">
+        </section>
+        <section class="transport" id="way">
           <h2 class="transport__title"><img class="transport__icon" src="img/transport-icon.png" alt="">Добраться до нас можно</h2>
           <div class="transport__tabs">
             <ul class="transport__list">
@@ -265,7 +268,7 @@
             </div>
           </div>
         </section>
-        <section class="questions">
+        <section class="questions" id="questions">
           <h2 class="questions__title"> <img class="questions__icon" src="img/questions-icon.png" alt="">Остались вопросы?</h2>
           <ul class="questions__list">
             <li class="questions__item">
@@ -330,7 +333,7 @@
             </li>
           </ul>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contact">
           <h2 class="contacts__title"><img class="contacts__icon" src="img/contact-icon.png" alt="">Контакты</h2>
           <div class="contacts__area">
             <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d513256.8346058651!2d29.49993483353758!3d59.83403443341044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1717994000119!5m2!1sru!2sru" width="100%" height="600px" style="border:0;border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
@@ -383,10 +386,10 @@
           <div class="footer__info">
             <div class="footer__block footer__block--top">
               <ul class="footer__menu-list">
-                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Главная</a></li>
-                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Забронировать </a></li>
-                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Наше пространство </a></li>
-                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Правила проживания</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="./">Главная</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="reserve.html">Забронировать </a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="index.html#space">Наше пространство </a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="doc.html">Правила проживания</a></li>
               </ul>
               <div class="footer__socials">
                 <p class="footer__text">Подписывайтесь</p><a class="footer__social-link" href="#"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -408,7 +411,7 @@
 </a>
               </div>
             </div>
-            <div class="footer__block footer__block--bottom"><a class="footer__doc-link" href="#">Пользовательское соглашение</a><a class="footer__doc-link" href="#">Политика конфиденциальности </a><a class="footer__doc-link" href="#">Политика файлов Cookie</a></div>
+            <div class="footer__block footer__block--bottom"><a class="footer__doc-link" href="doc.html">Пользовательское соглашение</a><a class="footer__doc-link" href="doc.html">Политика конфиденциальности </a><a class="footer__doc-link" href="doc.html">Политика файлов Cookie</a></div>
           </div>
         </div>
       </footer>
