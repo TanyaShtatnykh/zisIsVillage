@@ -134,12 +134,14 @@
   }
   @media screen and (max-width: 575.98px) {
     &__title {
+      flex-direction: column;
+      row-gap: 2px;
       margin-bottom: 12px;
       font-size: px-to-em(22);
     }
     &__icon {
       max-width: 40px;
-      margin-right: 10px;
+      margin-right: 0px;
     }
     &__info {
       row-gap: 14px;
@@ -157,7 +159,6 @@
     }
     &__icon {
       max-width: 30px;
-      margin-right: 6px;
     }
     iframe {
       height: 300px;

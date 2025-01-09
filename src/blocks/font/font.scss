@@ -79,7 +79,7 @@
       margin-right: 16px;
     }
     &__text {
-      margin-bottom: 16px;
+      margin-bottom: 4px;
       font-size: px-to-em(18);
     }
   }
@@ -96,25 +96,24 @@
       margin-right: 12px;
     }
     &__text {
-      margin-bottom: 0;
+      margin-bottom: 4px;
       font-size: px-to-em(16);
     }
   }
   @media screen and (max-width: 575.98px) {
     &__title {
+      flex-direction: column;
+      row-gap: 2px;
       margin-bottom: 12px;
       font-size: px-to-em(22);
     }
     &__icon {
       max-width: 40px;
-      margin-right: 10px;
+      margin-right: 0;
     }
     &__text {
-      margin-bottom: 16px;
+      margin-bottom: 4px;
       font-size: px-to-em(14);
-    }
-    .owl-stage {
-      padding: 0 0 10px;
     }
   }
   @media screen and (max-width: 359.98px) {
@@ -124,13 +123,9 @@
     }
     &__icon {
       max-width: 30px;
-      margin-right: 6px;
     }
     &__text {
       font-size: px-to-em(12);
-    }
-    .owl-dots {
-      column-gap: 10px;
     }
   }
 }

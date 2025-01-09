@@ -50,6 +50,9 @@
     border-radius: 0;
   }
   @media screen and (max-width: 1199.98px) {
+    &__area {
+      padding: 70px 50px 70px;
+    }
     &__title {
       margin-bottom: 20px;
     }
@@ -89,9 +92,6 @@
       margin-bottom: 16px;
       font-size: px-to-em(14);
     }
-    .owl-stage {
-      padding: 0 0 10px;
-    }
   }
   @media screen and (max-width: 359.98px) {
     &__title {
@@ -101,9 +101,6 @@
     &__text {
       margin-bottom: 16px;
       font-size: px-to-em(12);
-    }
-    .owl-dots {
-      column-gap: 10px;
     }
   }
 }
