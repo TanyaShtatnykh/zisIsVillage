@@ -18,6 +18,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 0 80px;
   }
   &__logo-link {
@@ -81,11 +83,14 @@
   }
   &__menu-item {
     position: relative;
+    svg {
+      transform: rotate(180deg);
+    }
     &--open {
       .header__menu-link--drop {
         color: #A04337;
         svg {
-          transform: rotate(180deg);
+          transform: rotate(0deg);
           path {
             fill: #A04337;
           }

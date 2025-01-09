@@ -13,6 +13,7 @@
     font-size: px-to-em(44);
     line-height: lh-to-pct(53, 44);
     font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
     color: #172925;
   }
@@ -49,10 +50,13 @@
     border-radius: 32px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
     background: #fff;
-    font-size: px-to-em(28);
+    font-size: px-to-em(24);
     line-height: lh-to-pct(40, 28);
     font-weight: 400;
     color: #010203;
+    svg {
+      flex-shrink: 0;
+    }
     &:hover {
       color: #A04337;
       path {
@@ -63,7 +67,7 @@
   @media screen and (max-width: 1199.98px) {
     padding: 0 50px 100px;
     &__title {
-      font-size: px-to-em(48);
+      margin-bottom: 20px;
     }
     &__icon {
       max-width: 80px;
@@ -88,7 +92,7 @@
     &__link {
       column-gap: 18px;
       padding: 16px;
-      font-size: px-to-em(26);
+      font-size: px-to-em(22);
       svg {
         width: 28px;
         height: auto;

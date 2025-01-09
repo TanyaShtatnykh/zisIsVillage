@@ -4,11 +4,21 @@ mixin font(modifier)
         h2.font__title 
           img.font__icon(src="img/font-icon.png", alt="")
           | Купель
-        p.font__text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
-        .font__slider.owl-carousel
-          +card("font-photo1.png")
-          +card("font-photo2.png")
-          +card("font-photo.png")
-          +card("font-photo2.png")
-          +card("font-photo2.png")
-          +card("font-photo2.png")
+        p.font__text Мягкий свет, ласковые струи гидромассажа и температура воды (35-40°C), окутывающая вас как мягкое одеяло. Есть функция гидромассажа и яркой подсветки. Перед каждым заселением гостей мы тщательно моем купель и наполняем ее чистейшей артезианской водой.
+        p.font__text Вместимость купели: 4-6 человек 
+        p.font__text Расслабьтесь и насладитесь умиротворением в нашей горячей купели с завораживающим видом на лес!
+        .font__slider.swiper
+          .swiper-wrapper
+            .swiper-slide
+              +card("font-photo1.png")
+            .swiper-slide
+                +card("font-photo2.png")
+            .swiper-slide
+                +card("font-photo.png")
+            .swiper-slide
+                +card("font-photo2.png")
+            .swiper-slide
+                +card("font-photo2.png")
+            .swiper-slide
+                +card("font-photo2.png")
+          .font__pagination

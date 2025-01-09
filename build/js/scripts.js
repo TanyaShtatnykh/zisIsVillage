@@ -1,107 +1,100 @@
+
 $(document).ready(function () {
-  $('.about__slider').owlCarousel({
+  const aboutSlider = new Swiper('.about__slider', {
+    enabled: true, 
+    slidesPerView: 1,
     loop: true,
-    
-    nav: false,
-    dots: true,
     autoplay: true,
-    center: true,
-    responsive: {
-      0: {
-        items: 1,
-        margin: 0
+    delay: 2000,
+    speed: 750,
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
       576: {
-        items: 2,
-        margin: 6,
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
-      768: {
-        items: 2,
-        margin: 6,
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 12,
       },
-      1000: {
-        items: 3,
-        margin: 6,
-      },
-      1200: {
-        items: 4,
-        margin: 6,
-      }
-    }
+    },
+    pagination: {
+      el: '.about__pagination',
+      type: 'bullets',
+    },
   });
 });
 $(function () {
-  $('.aboutHouse__gallery').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    infinite: true,
-    fade: true,
-    asNavFor: '.aboutHouse__gallery--mini'
-  });
-  $('.aboutHouse__gallery--mini').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    asNavFor: '.aboutHouse__gallery',
-    dots: false,
-    arrows: true,
-    prevArrow: $('.aboutHouse__nav--prev'),
-    nextArrow: $('.aboutHouse__nav--next'),
-    infinite: true,
-    centerMode: true,
-    focusOnSelect: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 4,
-          centerMode: false,
-        }
-      },
-      {
-        breakpoint: 360,
-        settings: {
-          slidesToShow: 3,
-          centerMode: false,
-        }
-      }
-    ]
-  });
+  // $('.aboutHouse__gallery').slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   arrows: false,
+  //   infinite: true,
+  //   fade: true,
+  //   asNavFor: '.aboutHouse__gallery--mini'
+  // });
+  // $('.aboutHouse__gallery--mini').slick({
+  //   slidesToShow: 5,
+  //   slidesToScroll: 1,
+  //   asNavFor: '.aboutHouse__gallery',
+  //   dots: false,
+  //   arrows: true,
+  //   prevArrow: $('.aboutHouse__nav--prev'),
+  //   nextArrow: $('.aboutHouse__nav--next'),
+  //   infinite: true,
+  //   centerMode: true,
+  //   focusOnSelect: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         slidesToShow: 4,
+  //         centerMode: false,
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 360,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         centerMode: false,
+  //       }
+  //     }
+  //   ]
+  // });
 });
 
 
 
 
 $(document).ready(function () {
-  $('.font__slider').owlCarousel({
+  const aboutSlider = new Swiper('.font__slider', {
+    enabled: true, 
+    slidesPerView: 1,
     loop: true,
-    margin: 6,
-    nav: false,
-    dots: true,
     autoplay: true,
-    center: true,
-    responsive: {
-      0: {
-        items: 1,
-        margin: 0
+    delay: 2000,
+    speed: 750,
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
       576: {
-        items: 2,
-        margin: 6,
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
-      768: {
-        items: 2,
-        margin: 6,
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 12,
       },
-      1000: {
-        items: 3,
-        margin: 6,
-      },
-      1200: {
-        items: 4,
-        margin: 6,
-      }
-    }
+    },
+    pagination: {
+      el: '.font__pagination',
+      type: 'bullets',
+    },
   });
 });
 
@@ -182,15 +175,23 @@ $(function() {
   })
 })
 $(document).ready(function () {
-  $('.space__slider').owlCarousel({
-    items: 1,
+  const houseSlider = new Swiper('.space__slider', {
+    enabled: true, 
+    slidesPerView: 1,
     loop: true,
-    margin: 0,
-    nav: true,
-    navText: ['<svg width="61" height="16" viewBox="0 0 61 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292889 7.2929C-0.0976334 7.68342 -0.0976333 8.31659 0.292889 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07106 15.0711C8.46159 14.6805 8.46159 14.0474 8.07106 13.6569L2.41421 8.00001L8.07106 2.34315C8.46159 1.95263 8.46159 1.31946 8.07106 0.928937C7.68054 0.538412 7.04737 0.538413 6.65685 0.928937L0.292889 7.2929ZM61 7L0.999996 7.00001L0.999996 9.00001L61 9L61 7Z" fill="#172925"/></svg>', '<svg width="121" height="16" viewBox="0 0 121 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M120.707 8.70711C121.098 8.31658 121.098 7.68342 120.707 7.29289L114.343 0.928932C113.953 0.538408 113.319 0.538408 112.929 0.928932C112.538 1.31946 112.538 1.95262 112.929 2.34315L118.586 8L112.929 13.6569C112.538 14.0474 112.538 14.6805 112.929 15.0711C113.319 15.4616 113.953 15.4616 114.343 15.0711L120.707 8.70711ZM0 9H120V7H0V9Z" fill="#172925"/></svg>'],
-    dots: false,
     autoplay: false,
+    speed: 750,
+    autoHeight: true,
+    navigation: {
+      nextEl: '.space__nav--next',
+      prevEl: '.space__nav--prev',
+    },
   });
+  $('[data-fancybox="gallery"]').fancybox({
+    loop: true,
+    hideScrollbar: false,
+    animationEffect: fade,
+  })
 });
 $( function() {
   $('.transport__tabs').tabs();

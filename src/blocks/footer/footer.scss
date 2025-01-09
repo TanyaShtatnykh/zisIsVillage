@@ -125,7 +125,7 @@
       gap: 12px 18px;
     }
     &__text {
-      display: none;
+      font-size: px-to-em(18);
     }
   }
   @media screen and (max-width: 767.98px) {
@@ -141,7 +141,7 @@
       font-size: px-to-em(16);
     }
     &__text {
-      display: none;
+      font-size: px-to-em(16);
     }
     &__socials {
       column-gap: 16px;

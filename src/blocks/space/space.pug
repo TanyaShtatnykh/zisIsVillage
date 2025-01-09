@@ -3,39 +3,30 @@ mixin space(modifier)
     .space__area
       h2.space__title
         img.space__icon(src="img/house-icon.png", alt="")
-        | Наше простраство
-      p.space__text Сайт рыба текст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
-      .space__slider.owl-carousel
-        .space__item
-          .space__content
-            h3.space__house-title Название коттеджа
-            p.space__house-text Сайт рыба текст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
-            p.space__house-price Цена от 8500 руб/сутки
-            a.space__btn-reserve(href="reserve.html") Забронировать
-            a.space__btn-more(href="house.html") Подробнее
-          .space__photos
-            .space__photo-box.space__photo-box--1: img.space__photo(src="img/house1.png", alt="")
-            .space__photo-box.space__photo-box--2: img.space__photo(src="img/house2.png", alt="")
-            .space__photo-box.space__photo-box--3: img.space__photo(src="img/house3.png", alt="")
-        .space__item
-          .space__content
-            h3.space__house-title Forest
-            p.space__house-text Сайт рыба текст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
-            p.space__house-price Цена от 8500 руб/сутки
-            a.space__btn-reserve(href="reserve.html") Забронировать
-            a.space__btn-more(href="house.html") Подробнее
-          .space__photos
-            .space__photo-box.space__photo-box--1: img.space__photo(src="img/house1.png", alt="")
-            .space__photo-box.space__photo-box--2: img.space__photo(src="img/house2.png", alt="")
-            .space__photo-box.space__photo-box--3: img.space__photo(src="img/house3.png", alt="")
-        .space__item
-          .space__content
-            h3.space__house-title Название коттеджа
-            p.space__house-text Сайт рыба текст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
-            p.space__house-price Цена от 8500 руб/сутки
-            a.space__btn-reserve(href="reserve.html") Забронировать
-            a.space__btn-more(href="house.html") Подробнее
-          .space__photos
-            .space__photo-box.space__photo-box--1: img.space__photo(src="img/house1.png", alt="")
-            .space__photo-box.space__photo-box--2: img.space__photo(src="img/house2.png", alt="")
-            .space__photo-box.space__photo-box--3: img.space__photo(src="img/house3.png", alt="")
+        | Новая форма комфорта
+      p.space__text Просторный дом (65 м.кв) рассчитан на 4+2 человека. Две спальни, кухня-гостиная, выход на открытую террасу в метрах от леса, горячая купель с функцией гидромассажа, костровая зона с мягкими креслами и крытый мангал.
+      .space__slider.swiper
+        .swiper-wrapper
+          .swiper-slide
+            .space__item
+              .space__content
+                h3.space__house-title Дом у леса
+                p.space__house-text Вместимость: 4 человека + 2 доп.места
+                p.space__house-text Заезд: с 15:00
+                p.space__house-text Выезд: до 12:00
+                p.space__house-text С животными: к сожалению, нельзя, мы заботимся о гостях, у которых есть аллергия на шерсть
+                p.space__house-text Дети до 6 лет размещаются бесплатно (без дополнительного места 
+                p.space__house-price Цена от 12000 руб
+                a.space__btn-reserve(href="reserve.html") Забронировать
+              .space__photos.gallery
+                a.space__photo-box.space__photo-box--1(href="img/house1.png" data-fancybox="gallery"): img.space__photo(src="img/house1.png", alt="")
+                a.space__photo-box.space__photo-box--2(href="img/house2.png" data-fancybox="gallery"): img.space__photo(src="img/house2.png", alt="")
+                a.space__photo-box.space__photo-box--3(href="img/house3.png" data-fancybox="gallery"): img.space__photo(src="img/house3.png", alt="")
+                a.space__photo-box(href="img/house3.png" data-fancybox="gallery"): img.space__photo(src="img/house3.png", alt="")
+                a.space__photo-box(href="img/house3.png" data-fancybox="gallery"): img.space__photo(src="img/house3.png", alt="")
+                a.space__photo-box(href="img/house3.png" data-fancybox="gallery"): img.space__photo(src="img/house3.png", alt="")
+        .space__navigation
+          .space__nav.space__nav--prev
+            include ./img/arrow-prev.svg
+          .space__nav.space__nav--next
+            include ./img/arrow-next.svg

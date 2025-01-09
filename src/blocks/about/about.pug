@@ -1,10 +1,18 @@
 mixin about(modifier)
   section.about&attributes(attributes)#about
     .about__area
-      h2.about__title Zis is village - это
-      p.about__text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
-      .about__slider.owl-carousel
-        +card("about-photo1.png", "about-icon1.png", "Удобные гамаки")
-        +card("about-photo2.png", "about-icon2.png", "Костровая зона")
-        +card("about-photo3.png", "about-icon3.png", "Мангальная зона")
-        +card("about-photo4.png", "about-icon4.png", "Детская площадка (На\u00A0этапе строительствa)")
+      h2.about__title Добро пожаловать в zis is village
+      p.about__text Привет! Мы обожаем загородный отдых и давно мечтали о своём пространстве, в котором мы каждому гостю подарим такой же уровень комфорта, который желаем для самих себя. Объединили усилия с ребятами с ютуб-канала 
+        a.about__link(href="https://www.youtube.com/c/ZiskindVillage") Ziskind Village
+        |  и вместе сделали свой первый проект недалеко от финского залива.
+      .about__slider.swiper
+        .swiper-wrapper
+          .swiper-slide
+            +card("about-photo1.png", "about-icon1.png", "Костровая зона")
+          .swiper-slide
+            +card("about-photo2.png", "about-icon2.png", "Мангальная зона")
+          .swiper-slide
+            +card("about-photo3.png", "about-icon3.png", "Открытая терасса")
+          .swiper-slide
+            +card("about-photo4.png", "about-icon4.png", "Горячая купель")
+        .about__pagination

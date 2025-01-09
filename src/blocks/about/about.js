@@ -1,32 +1,29 @@
+
 $(document).ready(function () {
-  $('.about__slider').owlCarousel({
+  const aboutSlider = new Swiper('.about__slider', {
+    enabled: true, 
+    slidesPerView: 1,
     loop: true,
-    
-    nav: false,
-    dots: true,
     autoplay: true,
-    center: true,
-    responsive: {
-      0: {
-        items: 1,
-        margin: 0
+    delay: 2000,
+    speed: 750,
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
       576: {
-        items: 2,
-        margin: 6,
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
-      768: {
-        items: 2,
-        margin: 6,
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 12,
       },
-      1000: {
-        items: 3,
-        margin: 6,
-      },
-      1200: {
-        items: 4,
-        margin: 6,
-      }
-    }
+    },
+    pagination: {
+      el: '.about__pagination',
+      type: 'bullets',
+    },
   });
 });
